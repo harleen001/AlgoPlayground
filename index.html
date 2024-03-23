@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoPlayground</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Loader styles */
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid #3498db;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+  
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    /* Light and Dark Mode Switch */
+    .switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+  
+    .switch input { display: none; }
+  
+    .slider {
+      position: relative;
+      width: 60px;
+      height: 34px;
+    }
+  
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+  
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+  
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  
+    /* Card styles */
+    .card {
+      margin-bottom: 20px; /* Added margin bottom to separate cards */
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+  
+    .card:hover {
+      transform: scale(1.05);
+    }
+  
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0; /* Rounded top corners */
+    }
+  
+    /* Navbar styles */
+    .navbar-brand img {
+      height: 100px; /* Adjust logo height */
+      margin-right: 5px; /* Add spacing between logo and text */
+    }
+  
+   
+  </style>
+  
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader"></div>
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <!-- Greeting -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo"> 
+      </a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> <!-- Added ml-auto class -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="material-icons">inbox</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="container">
+    <div class="row" style="margin-top: 8%;">
+      <!-- Left Section -->
+      <div class="col-md-6">
+        <!-- Big Font -->
+        <h1 style="font-size: 60px; color: black;"> &#x2197; Where Algorithms Come to Life</h1>
+        <!-- Two Buttons Underneath -->
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+          </div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Button 2</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Section -->
+      <div class="col-md-6">
+        <!-- Big Image -->
+        <img src="path/to/your/image.jpg" class="img-fluid" alt="Big Image">
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Cards -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 4</h5>
+          <p class="card-text">Donec eu libero sit amet quam egestas semper.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 5</h5>
+          <p class="card-text">Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="background6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card 6</h5>
+          <p class="card-text">Sed non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Dark Mode Switch Script -->
+<script>
+  const modeSwitch = document.getElementById('modeSwitch');
+  modeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+<!-- Loader Script -->
+<!-- Loader Script -->
+<!-- Loader Script -->
+<!-- Loader Script -->
+<!-- Loader Script -->
+<script>
+    // Show loader initially
+    document.querySelector('.loader').style.display = 'block';
+    // Hide container initially
+    document.querySelector('.container').style.visibility = 'hidden';
+  
+    // Delay hiding the loader for 4 seconds
+    setTimeout(function() {
+      // Hide loader
+      document.querySelector('.loader').style.display = 'none';
+      // Show container
+      document.querySelector('.container').style.visibility = 'visible';
+    }, 2000); // Delay for 2 seconds
+  
+    // Dark Mode Switch Script
+     modeSwitch = document.getElementById('modeSwitch');
+    modeSwitch.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+  
+
+  
+
+</body>
+</html>
