@@ -82,13 +82,20 @@
       object-fit: cover;
       border-radius: 15px 15px 0 0; /* Rounded top corners */
     }
-  
-    /* Navbar styles */
-    .navbar-brand img {
-      height: 100px; /* Adjust logo height */
-      margin-right: 5px; /* Add spacing between logo and text */
+    .card-text{
+      text-align: justify;
     }
-  
+/* Hide scrollbar for all browsers */
+body {
+    margin: 0;
+}
+
+/* WebKit (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
    
   </style>
   
@@ -103,63 +110,56 @@
 <!-- Main Content -->
 <div class="container">
   <!-- Greeting -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo.png" alt="Logo"> 
-      </a>
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto"> <!-- Added ml-auto class -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"> <i class="material-icons">inbox</i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
   
 
   <div class="container">
     <div class="row" style="margin-top: 8%;">
       <!-- Left Section -->
-      <div class="col-md-6">
+      <div class="col-md-8" style="padding-right: 6%;">
         <!-- Big Font -->
-        <h1 style="font-size: 60px; color: black;"> &#x2197; Where Algorithms Come to Life</h1>
-        <!-- Two Buttons Underneath -->
+        <h1 style="font-size: 40px; color: black;"> 🡥 Where Algorithms Come to Life</h1>
+        <br>
+        <h5 style="text-align: justify;">Welcome to Algoplayground, your ultimate destination for mastering algorithms in a fun and interactive way! Whether you're a beginner looking to understand the basics or an experienced coder aiming to refine your skills, Algoplayground has something for everyone.
+        </h5>
+<h5 style="text-align: justify;">But that's not all! Algoplayground goes beyond traditional learning methods with its interactive coding environment. Dive into the code editor, where you can write and execute your solutions in real-time. Watch as your algorithms come to life, step by step, and gain valuable insights into their behavior and efficiency.</h5>
+<h5 style="text-align: justify;">So what are you waiting for? Join us on Algoplayground today and unlock the secrets of algorithms in an immersive, hands-on learning experience like never before. Let's code, learn, and conquer together!</h5>        
+<!-- Two Buttons Underneath -->
+   
+
+
+
+
+   
+   <br>
+   
         <div class="row">
-          <div class="col-md-6">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-primary btn-lg btn-block ">Download Visuals 🠢</button>
           </div>
-          <div class="col-md-6">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Button 2</button>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Try Online 🠢</button>
           </div>
         </div>
       </div>
       
       <!-- Right Section -->
-      <div class="col-md-6">
+      <div class="col-md-4">
         <!-- Big Image -->
-        <img src="path/to/your/image.jpg" class="img-fluid" alt="Big Image">
+        <img src="assets/images/logo.png" class="img-fluid" alt="Big Image">
       </div>
     </div>
   </div>
   
   
   <!-- Cards -->
-  <div class="row">
+  <div class="row" style="margin-top: 20%;">
     <div class="col-md-4">
       <div class="card">
         <img src="background1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5 class="card-title">Sorting Techniques</h5>
+          <p class="card-text">Dive into the world of sorting algorithms, where we organize data with precision and efficiency. From Bubble Sort and Selection Sort to the advanced Merge Sort and Quick Sort, each technique offers a unique approach to arranging elements in order.</p>
         </div>
       </div>
     </div>
@@ -167,8 +167,8 @@
       <div class="card">
         <img src="background2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <h5 class="card-title">Searching Algorithms</h5>
+          <p class="card-text">Searching algorithms are the guiding lights in the data, helping us locate specific elements swiftly. Whether it's the simplicity of Linear Search or the sophistication of Binary Search, these algorithms pave the way for efficient data retrieval.</p>
         </div>
       </div>
     </div>
@@ -176,8 +176,8 @@
       <div class="card">
         <img src="background3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 3</h5>
-          <p class="card-text">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+          <h5 class="card-title">Graph Algorithms</h5>
+          <p class="card-text">From Breadth-First Search (BFS) to the depth of Depth-First Search (DFS), and from the shortest paths with Dijkstra's Algorithm to spanning trees with Prim's and Kruskal's Algorithms, graph algorithms holds pathways in complex networks.</p>
         </div>
       </div>
     </div>
@@ -187,8 +187,8 @@
       <div class="card">
         <img src="background4.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 4</h5>
-          <p class="card-text">Donec eu libero sit amet quam egestas semper.</p>
+          <h5 class="card-title">Dynamic Programming</h5>
+          <p class="card-text">Dynamic programming unveils the power of optimization, offering solutions to complex problems. Delve into Fibonacci Sequence, Knapsack Problem, and Longest Common Subsequence, where recursive insights lead to efficient computations.</p>
         </div>
       </div>
     </div>
@@ -196,8 +196,8 @@
       <div class="card">
         <img src="background5.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 5</h5>
-          <p class="card-text">Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h5 class="card-title">Data Structures</h5>
+          <p class="card-text">Data structures form the building blocks of efficient algorithms, providing a framework to store and manipulate data. From Arrays and Linked Lists to Trees and Graphs, each structure serves a  purpose in managing information effectively.</p>
         </div>
       </div>
     </div>
@@ -205,8 +205,8 @@
       <div class="card">
         <img src="background6.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card 6</h5>
-          <p class="card-text">Sed non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <h5 class="card-title">Other Algorithms</h5>
+          <p class="card-text">Beyond the categories lie a realm of diverse algorithms, each solving unique computational challenges. Explore Greedy Algorithms, Backtracking Algorithms where efficiency converge to address complex problems with elegance.</p>
         </div>
       </div>
     </div>
